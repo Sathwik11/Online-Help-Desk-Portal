@@ -1,0 +1,96 @@
+<html>
+<head>
+<style>
+h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+body {
+    background-color: #b0c4de;
+font-family: 'Cinzel Decorative', cursive;
+  background: url(http://s.cdpn.io/3/blurry-blue.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.tb5 {
+	border:2px solid #456879;
+	border-radius:10px;
+	height: 22px;
+	width: 230px;
+}
+
+.b1 {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #4197ee) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #4197ee 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#4197ee');
+	background-color:#79bbff;
+	-webkit-border-top-left-radius:20px;
+	-moz-border-radius-topleft:20px;
+	border-top-left-radius:20px;
+	-webkit-border-top-right-radius:20px;
+	-moz-border-radius-topright:20px;
+	border-top-right-radius:20px;
+	-webkit-border-bottom-right-radius:20px;
+	-moz-border-radius-bottomright:20px;
+	border-bottom-right-radius:20px;
+	-webkit-border-bottom-left-radius:20px;
+	-moz-border-radius-bottomleft:20px;
+	border-bottom-left-radius:20px;
+	text-indent:0px;
+	border:2px solid #469df5;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:26px;
+	font-weight:bold;
+	font-style:italic;
+	height:38px;
+	line-height:38px;
+	width:101px;
+	text-decoration:none;
+	text-align:center;
+}
+.b1:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #4197ee), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #4197ee 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#4197ee', endColorstr='#79bbff');
+	background-color:#4197ee;
+}.b1:active {
+	position:relative;
+	top:1px;
+}</style>
+</head>
+<body>
+
+<center><h1>Admin Authentication</h1></center>
+
+<center>
+
+<form action="AdminAuthenticate.php" method="post">
+
+<table border=0>
+
+<tr>
+<td><h3>Admin Name</h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="text" name="ADNAME" class="tb5" required></td>
+</tr>
+
+<tr>
+<td><h3>Password</h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="password" name="PASSWORD" class="tb5" required></td>
+</tr>
+
+</table>
+
+<input type="submit" value="Login" class="b1">
+
+</form>
+
+
+</center>
+</body>
+</html>

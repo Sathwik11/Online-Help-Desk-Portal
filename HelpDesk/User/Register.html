@@ -1,0 +1,95 @@
+<html>
+<head>
+<link rel="stylesheet" types="text/css" href="S1.css">
+
+<style>
+.border1
+{
+border-style:none;
+}
+
+.border2
+{
+border:1px solid;
+}
+
+.pos_fixed1
+{
+position:fixed;
+top:30px;
+right:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+
+<center><h1>Registeration Details</h1></center>
+<center>
+<form action="StoreRegister.php" method="post" onSubmit="return checkPhno()">
+
+<table border=0>
+
+<tr>
+<td><h3><i>UserName</i></h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="text" name="USNAME" class="tb5" pattern="[a-zA-Z0-9]{5,}" title="Minimum 5 letters or numbers." required></td>
+</tr>
+
+<tr>
+<td><h3><i>Password</i></h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="password" name="PASSWORD" class="tb5" pattern=".{5,}" title="Minmimum 5 letters or numbers." required></td>
+</tr>
+
+<tr>
+<td><h3><i>Retype Password</i></h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="password" name="REPASSWORD" class="tb5" pattern=".{5,}" title="Minmimum 5 letters or numbers." required></td>
+</tr>
+
+
+<tr>
+<td><h3>IP Address</h3></td>
+<td><pre>  :  </pre></td>
+<td>
+<input type="text" name="IP1" maxlength=3 style="width:30px;"  class="tb5" pattern="[0-9]{3,}|[0-9]{2,}|[0-9]" title="Minmimum 1 number" value="172" readonly required>.<input type="text" name="IP2" maxlength=3 style="width:30px;" class="tb5" pattern="[0-9]{3,}|[0-9]{2,}|[0-9]" title="Minmimum 1 number" required>.<input type="text" name="IP3" maxlength=3 style="width:30px;" class="tb5" pattern="[0-9]{3,}|[0-9]{2,}|[0-9]" title="Minmimum 1 number" required>.<input type="text" name="IP4" maxlength=3 style="width:30px;" class="tb5" pattern="[0-9]{3,}|[0-9]{2,}|[0-9]" title="Minmimum 1 number" required>
+</td>
+</tr>
+<tr>
+<td><h3>MAC Address</h3></td>
+<td><pre>  :  </pre></td>
+<td>
+<input type="text" name="MAC1" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>-<input type="text" name="MAC2" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>-
+<input type="text" name="MAC3" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>-
+<input type="text" name="MAC4" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>-
+<input type="text" name="MAC5" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>-
+<input type="text" name="MAC6" maxlength=2 style="width:30px;" class="tb5" pattern="[0-9A-F]{2,}" title="Minmimum 2 letters or numbers" required>
+
+</td>
+</tr>
+<tr>
+<td><h3>Phone Number</h3></td>
+<td><pre>  :  </pre></td>
+<td><input type="text" name="PHNO" maxlength=10 class="tb5" pattern="[789][0-9]{9}" title="Should start with 7/8/9 and 10 numbers" required></td>
+</tr>
+
+</table>
+
+</center>
+<center>
+<input type="submit" class="b1">
+</form><br><br>
+
+
+</center>
+
+</body>
+</html>
+
+
+
+
+
